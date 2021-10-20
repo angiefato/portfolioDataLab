@@ -1,0 +1,114 @@
+@font-face {
+  font-family: LeMurmure; 
+  src: url(/fonts/le_murmure.ttf);
+}
+@font-face{
+  font-family: Graphik;
+  src:url(/fonts/GraphikFont/Graphik-Light.ttf)
+}
+
+body {
+  background-color: black;
+  max-width: 1920px;
+}
+
+
+html {
+  margin: 50px;
+}
+
+ul, p, div, h2 {
+  color: white;
+  font-family: "Graphik";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Graphik";
+  font-size: 20px; 
+}
+
+a:hover {
+  background-color: chocolate;
+  padding: 10px;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-family: "LeMurmure";
+  line-height: 1;
+}
+
+h2{
+  padding-top: 20px;
+}
+
+#asterisco {
+  width: 110px;
+  padding: 10px;
+
+   -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+header div{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+section {
+  margin-top: 100px;
+  padding: 0;
+  
+}
+
+section ul {
+  padding: 0;
+}
+
+section #iconos {
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  flex-wrap: wrap;  
+  align-items: flex-end;
+}
+
+section #iconos a {
+  background-color: pink;
+  margin: 10px;
+  padding:10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section #iconos a img {
+  width: 25px;
+}
+section #iconos a:hover {
+  background-color: chocolate;
+}
